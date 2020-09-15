@@ -1764,7 +1764,7 @@ function init(){
     observer.observe(document.getElementById('CLIscript'));
     console.log("VIP (Visualization in Plugin) is ready on client side.");
 
-    var tryurls = [window.location.href.replace(/\/+$/,'')+"/VIP",window.location.origin+"/VIP","/VIP","VIP"];
+    var tryurls = ["VIP"];
     var results = [];
     tryurls.reduce(function(prev, cur, index, arr) {
       return prev.then(function(data) {
